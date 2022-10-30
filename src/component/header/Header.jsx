@@ -1,14 +1,19 @@
 import React from "react"
 import "./Header.css"
-import ME from "../../assets/avatar3.jpg"
+import ME from "../../assets/joex.jpg"
 import {RiShareForwardLine} from "react-icons/ri"
 import {BsThreeDots} from "react-icons/bs"
 
 const Header = () => {
+
+   let none = {
+        display: 'none'
+    }
+
     return(
         <header>
             <div className="header__icons">
-
+                <p className="share__desktop" style={none}>Share Link</p>
                 <div className="icon icon__1">
                 <RiShareForwardLine />
                 </div>
